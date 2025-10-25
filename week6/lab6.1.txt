@@ -1,0 +1,13 @@
+1. Write a PHP file for this exercise, you will use a list of ten of the largest cities in the world. (Please note, these are not the ten largest, just a selection of ten from the largest cities.) Create an array with the following values: Tokyo, Mexico City, New York City, Mumbai, Seoul, Shanghai, Lagos, Buenos Aires, Cairo, London.
+Print these values to the browser separated by commas, using a loop to iterate over the array. Sort the array, and then print the values to the browser in an ordered list, again using a loop.
+Add the following cities to the array: Los Angeles, Calcutta, Osaka and Beijing. Sort the array again, and print it once more to the browser in an unordered list.
+
+2. In this PHP exercise, you will again use the list of cities in task 1. Here's the list, this time including countries as well as cities:
+Tokyo, Japan; Mexico City, Mexico; New York City, USA; Mumbai, India; Seoul, Korea; Shanghai, China; Lagos, Nigeria; Buenos Aires, Argentina; Cairo, Egypt; London, England. 
+This time, create an associative array, using the countries as keys, the cities as values. Print the array once more to the browser in an unordered list returning the statement $city is in $country.
+3. Save the lab6.1.txt file in your PHP development folder, write PHP to read all lines of this file and display them in browser; add all content from lab6.2.txt at the end of lab5.1.txt and display them again. 
+4. Write a PHP function to generate a random password (contains uppercase, lowercase, numeric and other) using shuffle() function
+
+5. $ceu = array( "Italy"=>"Rome", "Luxembourg"=>"Luxembourg", "Belgium"=> "Brussels", "Denmark"=>"Copenhagen", "Finland"=>"Helsinki", "France" => "Paris", "Slovakia"=>"Bratislava", "Slovenia"=>"Ljubljana", "Germany" => "Berlin", "Greece" => "Athens", "Ireland"=>"Dublin", "Netherlands"=>"Amsterdam", "Portugal"=>"Lisbon", "Spain"=>"Madrid", "Sweden"=>"Stockholm", "United Kingdom"=>"London", "Cyprus"=>"Nicosia", "Lithuania"=>"Vilnius", "Czech Republic"=>"Prague", "Estonia"=>"Tallin", "Hungary"=>"Budapest", "Latvia"=>"Riga", "Malta"=>"Valetta", "Austria" => "Vienna", "Poland"=>"Warsaw") ;
+
+Create a PHP script which displays the capital and country name from the above array $ceu. Sort the list by the capital of the country.
