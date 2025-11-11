@@ -10,7 +10,7 @@
         $servername = "localhost";
         $username = "root";
         $password = "";
-        $dbname = "library1_db";
+        $dbname = "library";
 
         $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -19,11 +19,7 @@
         }
         echo "Connected successfully";
         ?>
-        
-        
-    <h1>Online Library</h1>
-
-    <h2>Login</h2>
+    
 
     
 </body>
