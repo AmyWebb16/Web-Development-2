@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Library Home Page</title>
-    <link rel="stylesheet" href="styles/MainPage.css">
+    <title>CURD</title>
 </head>
 <body>
-    <?php
+     <?php
         $servername = "localhost";
         $username = "root";
         $password = "";
-        $dbname = "library";
+        $dbname = "labdb";
+
 
         $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -18,8 +18,15 @@
             die("Connection failed: " . $conn->connect_error);
         }
         echo "Connected successfully";
-        ?>
-    
 
-    
-</body>
+        $sql = "SEELECT UserID, UserName,Password,email from user";
+
+
+    ?>
+
+    <a href ="show.php" > show product>
+    <a href= "add.php" > add new product >
+    <a href ="update.php" > update new product>
+    <a href ="delete.php" > delete product>
+
+

@@ -1,7 +1,6 @@
 <?php
-include 'MainPage.php'; // Make sure this connects to your database
+include 'connection.php';
 
-$message = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
@@ -20,6 +19,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         if ($password === $stored_password) {
             $message = "Login successful!";
+            header("Location: MainPage.php");
+            exit();
           
         } else {
             $message = "Incorrect password.";
@@ -37,6 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html>
 <head>
     <title>Login</title>
+    
 </head>
 <body>
 
@@ -55,8 +57,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <input type="submit" value="Login">
 </form>
+<a href ="Register.php">CREATE ACCOUNT>
 
-<p>Don't have an account? <a href="register.php">Create one</a></p>
+
 
 </body>
 </html>
